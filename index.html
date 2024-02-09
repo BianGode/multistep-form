@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Multi-step form</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,10 +28,15 @@
   <body>
     <!-- Sidebar start -->
     <div>
-      <div>Step <span>1</span> Your info</div>
-      <div>Step <span> 2</span> Select plan</div>
-      <div>Step <span>3</span> Add-ons</div>
-      <div>Step <span>4</span> Summary</div>
+      <div>
+        <div>Step <span>1</span> Your info</div>
+        <div>Step <span> 2</span> Select plan</div>
+        <div>Step <span>3</span> Add-ons</div>
+        <div>Step <span>4</span> Summary</div>
+      </div>
+      <div class="filler-div-50">
+        <!-- filler div to set the parent as template-grid-colums: 50% 50% -->
+      </div>
     </div>
     <!-- Sidebar end -->
 
@@ -52,32 +57,31 @@
     <!-- Step 2 end -->
 
     <!-- Step 3 start -->
-  <div class="step-three-div">
-    Pick add-ons Add-ons help enhance your gaming experience. Online service
-    Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
-    +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
-    Step
-  </div>
+    <div class="step-three-div">
+      Pick add-ons Add-ons help enhance your gaming experience. Online service
+      Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
+      +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back
+      Next Step
+    </div>
     <!-- Step 3 end -->
 
     <!-- Step 4 start -->
-<div class="step-four-div">
+    <div class="step-four-div">
+      Finishing up Double-check everything looks OK before confirming.
 
-    Finishing up Double-check everything looks OK before confirming.
+      <!-- Dynamically add subscription and add-on selections here -->
 
-    <!-- Dynamically add subscription and add-on selections here -->
-
-    Total (per month/year) Go Back Confirm
-  </div>
+      Total (per month/year) Go Back Confirm
+    </div>
 
     <!-- Step 4 end -->
 
     <!-- Step 5 start -->
-
-    Thank you! Thanks for confirming your subscription! We hope you have fun
-    using our platform. If you ever need support, please feel free to email us
-    at support@loremgaming.com.
-
+    <div class="step-five-div">
+      Thank you! Thanks for confirming your subscription! We hope you have fun
+      using our platform. If you ever need support, please feel free to email us
+      at support@loremgaming.com.
+    </div>
     <!-- Step 5 end -->
 
     <div class="attribution">
@@ -88,3 +92,6 @@
     </div>
   </body>
 </html>
+
+
+<!-- rewrite this in another project with vue or react -->
